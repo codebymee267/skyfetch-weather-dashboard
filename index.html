@@ -13,18 +13,33 @@
 
         <!-- Add this BEFORE the #weather-display div -->
 
-<div class="search-section">
+    <div class="search-section">
     <!-- TODO: Create an input field -->
     <!-- - type: text -->
     <!-- - id: city-input -->
     <!-- - placeholder: "Enter city name..." -->
     <input type="text" id="city-input" placeholder="Enter city name...">
-
     
     <!-- TODO: Create a search button -->
     <!-- - id: search-btn -->
     <!-- - text: "Search" or "🔍 Search" -->
     <button id="search-btn">🔍 Search</button>
+    </div>
+
+
+        <!-- Add this between search-section and weather-display -->
+
+<div id="recent-searches-section" class="recent-searches-section">
+    <!-- TODO: Add heading "Recent Searches" or similar -->
+    <h3>Recent Searches</h3>
+    
+    <!-- TODO: Add container for search buttons -->
+
+
+    <!-- Give it id="recent-searches-container" -->
+    <div id="recent-searches-container" class="recent-searches-container">
+
+        <!-- Recent search buttons will be dynamically added here -->
 </div>
         
         <div id="weather-display">
@@ -36,6 +51,8 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     
     <!-- Your JavaScript -->
+    <script src="config.js"></script>
+    <script src="app.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
